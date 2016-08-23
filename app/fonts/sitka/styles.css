@@ -1,0 +1,7 @@
+
+@font-face {
+  font-family: 'SitkaSmall';
+  src: url('SitkaSmall.ttf')  format('truetype'), url('SitkaSmall.svg#SitkaSmall') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

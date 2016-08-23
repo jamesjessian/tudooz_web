@@ -1,0 +1,49 @@
+.adder {
+	position: relative;
+	margin-top: 16px;
+	height: 32px;
+}
+.adder input {
+	transition: width 0.4s, left 0.4s;
+	width: 0px;
+	float: left;
+	height: 32px;
+	border: solid 1px rgba(0,0,0,0.2);
+	border-radius: 16px;
+	margin: 0px;
+	padding-left: 16px;
+	outline: none;
+	position: absolute;
+	left: calc(50% - 8px);
+}
+.adder.open input {
+	width: calc(100% - 48px);
+	left: 0px;
+}
+.adder .icon:before { 
+	content: "+"; 
+}
+.adder .icon {
+	font-size: 32px;
+	line-height: 32px;
+	color: rgba(0,0,0,0.2);
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin: 0px 8px;
+	position: absolute;
+	right: calc(50% - 24px);
+	transition: right 0.4s, transform 0.4s;
+	transition-delay: 0s, 0.5s;
+	border-radius: 16px;
+	border: solid 1px rgba(0,0,0,0.2);
+	background-color: white;
+	cursor: pointer;
+}
+.adder.open .icon {
+	right: 0px;
+	transform: rotate(45deg);
+}
+.adder input[name=submit] {
+	display: none;
+}

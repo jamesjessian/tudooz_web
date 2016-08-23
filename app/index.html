@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Tudooz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        
+        <!-- Auth0Lock script - Needs to be loaded before requireJS -->
+        <script src="//cdn.auth0.com/js/lock/10.0/lock.min.js"></script>
+
+        <!-- Load main.js via require.js -->
+        <script data-main="js/main.js" src="js/vendor/require.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Font CSS -->
+        <link rel="stylesheet" href="fonts/sitka/styles.css">
+        <link rel="stylesheet" href="fonts/flaticon/flaticon.css">
+
+        <!-- Component CSS -->
+        <link rel="stylesheet" href="views/all-lists.css">
+        <link rel="stylesheet" href="views/todo.css">
+        <link rel="stylesheet" href="views/todo-container.css">
+        <link rel="stylesheet" href="views/adder.css">
+        <link rel="stylesheet" href="views/category-circle.css">
+        <link rel="stylesheet" href="views/reschedule-panel.css">
+        <link rel="stylesheet" href="views/control-panel.css">
+    </head>
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Main content area -->
+		<div id="content">
+            <!-- Front screen -->
+            <div class="front" style="display:none">
+                <img src="img/title.png"></img>
+                <div class="login-button"><span class="flaticon-right-arrow"></span></div>
+            </div>
+        </div>
+        
+        <div id="overlay">
+            <!-- Container for 'overlay' panels (e.g. ControlPanel) -->
+        </div>
+
+    </body>
+</html>

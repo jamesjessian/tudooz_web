@@ -1,0 +1,49 @@
+body {
+    font-family: SitkaSmall;
+    background-color: #6090C9;
+}
+* {
+    box-sizing: border-box;
+}
+#content {
+    text-align: center;
+    padding: 32px;
+}
+.ui-overlay {
+    display: none; /* Overlay default to hidden */
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Front screen styles */
+.front {
+    margin-top: 60px;
+}
+.login-button {
+    color: #6090C9;
+    background-color: white;
+    width: 64px;
+    margin: 60px auto;
+    height: 64px;
+    border-radius: 32px;
+    font-size: 32px;
+    cursor: pointer;
+}
+.login-button span {
+    position: relative;
+    top: 13px;
+    left: -9px;
+}
+.login-button span:before {
+    font-size: 35px;
+}
+
+.bigbutton {
+	display: inline-block;
+	margin: 20px;
+	font-size: 48px;
+	border-radius: 10px;
+	border: solid 1px rgba(0,0,0,0.3);
+	background-color: #6090C9;
+	color: white;
+	padding: 10px 20px;
+}

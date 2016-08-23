@@ -1,0 +1,15 @@
+.reschedule-panel {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+	padding-top: 100px;
+}
+
+.reschedule-panel>.title {
+	color: white;
+	font-size: 48px;
+}
