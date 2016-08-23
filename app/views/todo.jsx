@@ -24,11 +24,11 @@ define(["react","jsx!/views/reschedule-panel", "utils"], function(React, Resched
 		 * Handler for click outside of component 
 		 */
 		onDocClick: function(e) {
-			this.updateTitle();
-
 			// Check that click was not within this component
 			if(this.refs.todo && !this.refs.todo.getDOMNode().contains(e.target)) {
 				// Deselect component
+				if(this.state.editing===true)
+					this.updateTitle();
 				this.setState({open: false, editing: false});
 			}
 		},
