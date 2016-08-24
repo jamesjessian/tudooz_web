@@ -18,6 +18,9 @@ body {
 .front {
     margin-top: 60px;
 }
+.front>img {
+    max-width: 100%;
+}
 .login-button {
     color: #6090C9;
     background-color: white;
