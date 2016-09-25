@@ -86,7 +86,7 @@ define(["react","jsx!/views/todo", "jsx!/views/adder", "utils"], function (React
 			// Create array of Todo-component instances from data array in state
 			var todos = this.state.data.map(function (todo) {
 				return (
-					<Todo id={todo.id} title={todo.title} type={this.props.type} onComplete={this.onTaskComplete}></Todo>
+					<Todo key={todo.id} id={todo.id} title={todo.title} type={this.props.type} onComplete={this.onTaskComplete}></Todo>
 				);
 			}.bind(this));
 			
